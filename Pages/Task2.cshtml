@@ -1,0 +1,17 @@
+﻿@page
+@model BISolutionsTestProject.Pages.Task2Model
+@{
+}
+
+<div class="text-left">
+    <form method="post">
+        <h1 class="display-4 mb-4">Задание 2</h1>
+        <p>Введите числа:</p>
+        <input name="first" class="form-control mb-2" type="number" />
+        <input name="second" class="form-control mb-2" type="number" />
+        <button class="btn btn-primary mb-4" type="submit">Отправить</button>
+    </form>
+    <p>Все числа: @Model.AllNumbers</p>
+    <p>Ввод: @Model.Input1, @Model.Input2</p>
+    <p>Вывод: @Model.Output</p>
+</div>

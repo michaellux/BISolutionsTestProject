@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+
+}
+
+<div class="text-left">
+    <form method="post">
+        <h1 class="display-4 mb-4">Задание 1</h1>
+        <p>Введите числа через запятую</p>
+        <input name="numbers" class="form-control mb-2" type="text"/>
+        <button class="btn btn-primary mb-4" type="submit">Отправить</button>
+    </form>
+    <p>Все числа: @Model.AllNumbers</p>
+    <p>Из них нечётные: @Model.OddNumbers</p>
+    <p>Из этих нечётных каждый второй: @Model.OddEverySecond<p>
+    <strong>Сумма по модулю: @Model.Sum</strong>
+</div>

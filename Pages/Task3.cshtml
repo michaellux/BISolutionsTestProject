@@ -1,0 +1,15 @@
+﻿@page
+@model BISolutionsTestProject.Pages.Task3Model
+@{
+}
+
+<div class="text-left">
+    <form method="post">
+        <h1 class="display-4 mb-4">Задание 3</h1>
+        <p>Введите строку</p>
+        <input name="text" class="form-control mb-2" type="text" />
+        <button class="btn btn-primary mb-4" type="submit">Отправить</button>
+    </form>
+    <p>Слово: @Model.Word</p>
+    <p>Это палиндром? - @Model.IsPalindrome</p>
+</div>
